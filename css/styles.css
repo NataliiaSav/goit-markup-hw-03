@@ -168,7 +168,7 @@ display: flex;
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
-    color: var(--title-color)
+    color: var(--title-color);
 }
 .section-text {
     margin-top: 10px;
@@ -215,6 +215,25 @@ margin-right: 0;
 .team-member {
     font-weight: 500;
     }
+.footer {
+       background-color: var(--secondary-bcg-color);
+   } 
+.footer.container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.footer .logo {
+    color: var(--primary-white-color);
+}
+.footer.list {
+    margin-top: 28px;
+}
+.footer-item {
+    margin-top: 12px;
+}
+.footer-item:first-child {
+    margin-top: 0;
+}
 .address {
     font-size: 14px;
     font-style: normal;
