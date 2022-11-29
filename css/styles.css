@@ -8,6 +8,7 @@
 /* колір лого бордер #000000 */
 /* колір фону #F5F5F5 */
 /* вторічний колір фону #2F303A */
+/* колір бордеру у хедері #ECECEC */
 /*  */
 
 :root {
@@ -19,6 +20,7 @@
     --secondary-bcg-color: #2F303A;
     --third-bcg-color: #F5F4FA;
     --primary-white-color: #FFFFFF;
+    --border-color: #ECECEC;
 }
 body {
     font-family: 'Roboto', sans-serif;
@@ -39,18 +41,18 @@ h6,
 p {
     margin: 0;
 }
+
 .container {
     margin-left: auto;
     margin-right: auto;
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
-    align-items: center;
-   
-    outline: 2px solid tomato;
 }
 .page-header {
-display: flex;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid var(--border-color);
 }
 .logo {
     color: var(--logo-color);
@@ -67,8 +69,6 @@ display: flex;
 .site-nav {
     display: flex;
     margin-left: 93px;
-
-    outline: 2px solid gold;
 }
 .site-nav .item + .item {
     margin-left: 50px;
@@ -95,9 +95,7 @@ display: flex;
 .contacts-list {
     display: flex;
     margin-left: auto;
-    
-    outline: 2px solid teal;
-}
+       }
  .contacts-item .contacts:last-child {
     margin-left: 40px;
 }
@@ -220,7 +218,8 @@ margin-right: 0;
     font-weight: 500;
     }
 .footer {
-       background-color: var(--secondary-bcg-color);
+    margin-top: 94px;
+    background-color: var(--secondary-bcg-color);
    } 
 .footer.container {
     padding-top: 60px;
@@ -275,14 +274,33 @@ margin-right: 0;
 .filter {
     background-color: var(--primary-white-color);
 }
+
+.filter-set {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -4px;
+
+
+}
+.filter-item  {
+    margin-left: 30px;
+    margin-top: 30px;
+    flex-basis: calc(100%/3 - 30px);
+}
 .filter.title {
-    font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
     color: var(--title-color);
 }
 .filter.text {
+    margin-top: 4px;
     font-size: 16px;
     line-height: 1.9;
+    }
+    .filter-content {
+        padding: 20px 24px;
     }
