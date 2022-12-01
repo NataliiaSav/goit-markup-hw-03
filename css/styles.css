@@ -118,13 +118,17 @@ p {
 .section {
     padding: 94px 0;
 }
+
+/* герой */
+
 .hero {
         background-color: var(--secondary-bcg-color);
         text-align: center;
+        padding: 200px 0;
 }
 .hero-title{
-    margin-bottom: 40px;
-    min-width: 696px;
+    margin: 0 auto 30px;
+    max-width: 696px;
     color: var(--primary-white-color);
     font-weight: 900;
     font-size: 44px;
@@ -137,7 +141,6 @@ p {
     padding: 0;
     background-color: var(--accent-color);
     color: var(--primary-white-color);
-    font-weight: 700;
     font-size: 16px;
     line-height: 1.9;
     letter-spacing: 0.06em;
@@ -149,19 +152,19 @@ p {
 .hero .button {
     display: inline-block;
     min-width: 200px;
-    padding: 10px 24px;
+    padding: 8px 24px;
 }
+/* переваги */
 
 .list.advantadges {
     display: flex;
+    gap: 30px;
 }
 .item-advantadges {
     width: 270px;
-    margin-right: 30px;
 }
-.item-advantadges:last-child {
-    margin-right: 0;
-}
+/* секція діяльність */
+
 .section.activity {
     padding-top: 0;
 }
@@ -185,52 +188,50 @@ p {
 .list.images {
     display: flex;
     margin-top: 50px;
+    gap: 30px;
 }
 .item-images {
     width: 370px;
-    margin-right: 30px;
-}
-.item-images:last-child {
-    margin-right: 0;
-}
+   }
+
 .section-team {
     margin-top: 32px;
     background-color: var(--third-bcg-color);
     font-size: 16px;
     line-height: 1.19;
+    letter-spacing: 0.03em;
+
     }
 .list.team {
     display: flex;
     margin-top: 50px;
     text-align: center;
+    gap: 30px;
 }
 .team {
     width: 270px;
-    margin-right: 30px;
     background-color: var(--primary-white-color);
-    border-radius: 0 0 4px 4px;
     border-bottom: 1px solid var(--border-cards-color);
+    border-radius: 0 0 4px 4px;
 }
 .team-member {
-    margin-top: 30px;
+    color: var(--title-color);
+    font-weight: 500;  
+    margin-bottom: 9px; 
 }
-.member-descr {
-    margin-top: 10px;
-    padding-bottom: 30px;
+.team-content {
+    padding: 30px 10px;
 }
-.team:last-child{
-    margin-right: 0;
-}
+
 .team-member {
     font-weight: 500;
-    }
+}
 .footer {
     background-color: var(--secondary-bcg-color);
-   } 
+    } 
 .footer.container {
-    padding-top: 60px;
-    padding-bottom: 60px;
-}
+    padding: 60px 0;
+    }
 .footer .logo {
     color: var(--primary-white-color);
 }
@@ -259,22 +260,20 @@ p {
     margin-bottom: 34px;
     display: flex;
     justify-content: center;
+    gap: 8px;
 }
-.button.primary {
-    padding: 6px 22px;
-    margin-left: 0;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.6;
-    }
-.button.secondary  {
+.button.filter {
     background-color: var(--third-bcg-color);
     color: var(--title-color);
     padding: 6px 22px;
-    margin-left: 8px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.6;
+}
+.button:hover,
+.button:focus {
+    background-color: var(--accent-color);
+    color: var(--primary-white-color);
 }
 
 .filter {
@@ -290,6 +289,7 @@ p {
     flex-basis: calc((100% - 60px)/3);
     border-bottom: 1px solid var(--border-cards-color);
 }
+
 .filter.title {
     font-size: 18px;
     line-height: 2;
@@ -300,7 +300,7 @@ p {
     margin-top: 4px;
     font-size: 16px;
     line-height: 1.9;
-    }
+}
 .filter-content {
     padding: 20px 24px;
-    }
+}
